@@ -4,6 +4,10 @@ For so many times, I found some nice color and hope to add to my app, I found th
 
 That's why I start this project. A file that contains intuitive initializers for `Color` in SwiftUI. Supporting RGBA, Hex, HSL, HSV and CMKY color space at the moment. The `SwiftUIColorTest` is an example to illustrate all the color space supported right now.
 
+![](img/SwiftUIColorTest.gif)
+
+It works for me and hope it works for you!
+
 Simply copy the `Color.swift` to your project to use them :)
 
 ## RGB
@@ -49,3 +53,6 @@ Color(h: Angle, s: Double, v: Double, opacity: Double = 1)
 Color(c: Double, m: Double, y: Double, k: Double, opacity: Double = 1)
 ```
 
+---
+
+Feel free to file issues or pull requests for more color space or some other functionality relates to `Color`~

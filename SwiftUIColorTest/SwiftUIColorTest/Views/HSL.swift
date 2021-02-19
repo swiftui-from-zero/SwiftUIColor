@@ -36,7 +36,7 @@ struct HSL: View {
                           color: Color(h: h, s: s, l: l, opacity: opacity))
         }
         .padding()
-        .navigationTitle("HSV")
+        .navigationTitle("HSL")
     }
 }
 
