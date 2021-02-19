@@ -2,7 +2,7 @@
 
 For so many times, I found some nice color and hope to add to my app, I found that `Color` in SwiftUI does not accept the colorspace... I have to type "XXX to Color Swift" in Google and go through those the stackoverflow answers for `UIColor` or Swift 3 that I don't need again and again.
 
-That's why I start this project. A file that contains intuitive initializers for `Color` in SwiftUI. Supporting RGBA, Hex, HSL, HSV and CMKY color space at the moment.
+That's why I start this project. A file that contains intuitive initializers for `Color` in SwiftUI. Supporting RGBA, Hex, HSL, HSV and CMKY color space at the moment. The `SwiftUIColorTest` is an example to illustrate all the color space supported right now.
 
 Simply copy the `Color.swift` to your project to use them :)
 
