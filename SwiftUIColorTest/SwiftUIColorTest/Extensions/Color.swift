@@ -45,13 +45,11 @@ extension Color {
 
         var tmp: UInt64 = 0
         Scanner(string: String(hex.dropFirst())).scanHexInt64(&tmp)
-        print(tmp)
         let r, g, b: Int
         if hex.count == 4 {
             r = (Int(tmp) & 0xF00) >> 8 * 0x11
             g = (Int(tmp) & 0x0F0) >> 4 * 0x11
             b = (Int(tmp) & 0x00F) * 0x11
-            print(r, g, b)
         } else {
             r = (Int(tmp) & 0xFF0000) >> 16
             g = (Int(tmp) & 0x00FF00) >> 8
