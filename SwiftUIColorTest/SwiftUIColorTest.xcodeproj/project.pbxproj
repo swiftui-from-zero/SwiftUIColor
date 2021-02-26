@@ -19,6 +19,8 @@
 		B302754525DF5292001D7703 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302754425DF5292001D7703 /* Color.swift */; };
 		B302754825DF5329001D7703 /* SliderWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302754725DF5329001D7703 /* SliderWithText.swift */; };
 		B302754B25DF5A49001D7703 /* ColorWithCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302754A25DF5A49001D7703 /* ColorWithCode.swift */; };
+		B3F1897D25E9351C006D81D5 /* GetRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1897C25E9351C006D81D5 /* GetRGBA.swift */; };
+		B3F1898025E93A69006D81D5 /* ColorCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1897F25E93A69006D81D5 /* ColorCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B302754425DF5292001D7703 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B302754725DF5329001D7703 /* SliderWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderWithText.swift; sourceTree = "<group>"; };
 		B302754A25DF5A49001D7703 /* ColorWithCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithCode.swift; sourceTree = "<group>"; };
+		B3F1897C25E9351C006D81D5 /* GetRGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRGBA.swift; sourceTree = "<group>"; };
+		B3F1897F25E93A69006D81D5 /* ColorCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				B302754025DF5269001D7703 /* HSL.swift */,
 				B302753925DF523E001D7703 /* HSV.swift */,
 				B302753A25DF523E001D7703 /* CMYK.swift */,
+				B3F1897C25E9351C006D81D5 /* GetRGBA.swift */,
 				B302754725DF5329001D7703 /* SliderWithText.swift */,
 				B302754A25DF5A49001D7703 /* ColorWithCode.swift */,
 			);
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B302754425DF5292001D7703 /* Color.swift */,
+				B3F1897F25E93A69006D81D5 /* ColorCalc.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				B302754525DF5292001D7703 /* Color.swift in Sources */,
 				B302754825DF5329001D7703 /* SliderWithText.swift in Sources */,
 				B302752725DF521A001D7703 /* SwiftUIColorTestApp.swift in Sources */,
+				B3F1898025E93A69006D81D5 /* ColorCalc.swift in Sources */,
 				B302754B25DF5A49001D7703 /* ColorWithCode.swift in Sources */,
+				B3F1897D25E9351C006D81D5 /* GetRGBA.swift in Sources */,
 				B302753C25DF523E001D7703 /* RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

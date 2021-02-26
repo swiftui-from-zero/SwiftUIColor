@@ -26,6 +26,9 @@ struct ContentView: View {
                 NavigationLink(
                     destination: CMYK(),
                     label: { Text("CMYK") })
+                NavigationLink(
+                    destination: GetRGBA(),
+                    label: { Text("Get RGBA") })
             }
             .navigationBarTitle(Text("SwiftUIColor"))
         }

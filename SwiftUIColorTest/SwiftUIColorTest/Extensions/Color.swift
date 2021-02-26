@@ -1,5 +1,6 @@
 //
-//  Created by Zilin Zhu on 2021/2/18.
+//  Created by Zilin Zhu.
+//  https://github.com/swiftui-from-zero/SwiftUIColor
 //
 
 import SwiftUI
@@ -45,11 +46,13 @@ extension Color {
 
         var tmp: UInt64 = 0
         Scanner(string: String(hex.dropFirst())).scanHexInt64(&tmp)
+        print(tmp)
         let r, g, b: Int
         if hex.count == 4 {
             r = (Int(tmp) & 0xF00) >> 8 * 0x11
             g = (Int(tmp) & 0x0F0) >> 4 * 0x11
             b = (Int(tmp) & 0x00F) * 0x11
+            print(r, g, b)
         } else {
             r = (Int(tmp) & 0xFF0000) >> 16
             g = (Int(tmp) & 0x00FF00) >> 8
@@ -61,5 +64,28 @@ extension Color {
     // MARK: Errors
     enum ColorInitError: Error {
         case hexStringErrorFormatted
+    }
+
+    // MARK: Get RGBA
+    // From stackoverflow
+    // https://stackoverflow.com/a/62994482/5163915
+    var components: (r: Double, g: Double, b: Double, a: Double) {
+        #if canImport(UIKit)
+        typealias NativeColor = UIColor
+        #elseif canImport(AppKit)
+        typealias NativeColor = NSColor
+        #endif
+
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+
+        guard NativeColor(self).getRed(&r, green: &g, blue: &b, alpha: &a) else {
+            // You can handle the failure here as you want
+            return (0, 0, 0, 0)
+        }
+
+        return (Double(r), Double(g), Double(b), Double(a))
     }
 }

@@ -65,4 +65,27 @@ extension Color {
     enum ColorInitError: Error {
         case hexStringErrorFormatted
     }
+
+    // MARK: Get RGBA
+    // From stackoverflow
+    // https://stackoverflow.com/a/62994482/5163915
+    var components: (r: Double, g: Double, b: Double, a: Double) {
+        #if canImport(UIKit)
+        typealias NativeColor = UIColor
+        #elseif canImport(AppKit)
+        typealias NativeColor = NSColor
+        #endif
+
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+
+        guard NativeColor(self).getRed(&r, green: &g, blue: &b, alpha: &a) else {
+            // You can handle the failure here as you want
+            return (0, 0, 0, 0)
+        }
+
+        return (Double(r), Double(g), Double(b), Double(a))
+    }
 }

@@ -11,7 +11,7 @@ struct ColorWithCode: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(code)
-                .font(.custom("CourierNewPS-BoldMT", size: 18))
+                .font(.custom("Menlo", size: 18))
             color
         }
     }
