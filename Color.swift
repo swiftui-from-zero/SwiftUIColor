@@ -1,5 +1,6 @@
 //
-//  Created by Zilin Zhu on 2021/2/18.
+//  Created by Zilin Zhu.
+//  https://github.com/swiftui-from-zero/SwiftUIColor
 //
 
 import SwiftUI
